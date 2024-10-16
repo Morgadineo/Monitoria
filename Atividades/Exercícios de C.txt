@@ -1,0 +1,179 @@
+*============================*
+| Exercícios do caderno de C |
+*============================*
+
+*== 1. Exercícios com inteiros ================================================================*
+
+1.10  Dizemos que um número natural é triangular se ele é produto de três números naturais
+	  consecutivos.
+		
+		Exemplo: 120 é triangular, pois 4*5*6 = 120
+		
+	  Dado um inteiro não-negativo, faça um programa em C para verificar se n é triangular
+	
+--------------------------------------------------------------------------------------------
+
+1.14  Um matemático italiano da idade média conseguiu modelar o ritmo de crescimento da 
+	  população de coelhos através de uma sequência de números naturais que passou a ser
+	  conhecida como sequência de Fibonacci. O n-ésimo número da sequência de Fibonacci Fn
+	  é dado pela seguinte fórmula de recorrência:
+	  
+		F1 = 1
+		F2 = 1
+		Fi = F(i - 1) + F(i - 2) para i >= 3
+		
+	Faça um programa em C que, dado N, calcule Fn.
+	
+----------------------------------------------------------------------------------------------------
+
+1.16  Escreva um código em C que, dado um número binário natural, retorne seu valor na base decimal
+		
+		Exemplo: Dado 10010 a saída será 18, pois 1*2^4 + 0*2^3 + 0*2^2 + 1*2^1 + 0*2^0 = 18
+		
+---------------------------------------------------------------------------------------------------
+
+1.17  Escreva um código em C que, dado um número decimal natural, retorne seu valor na base binária.
+		
+		Exemplo: Dado 18 a saída será 10010.
+		
+---------------------------------------------------------------------------------------------------
+
+1.22  (POLI 89) Dados um inteiro positivo n e uma sequência de n números inteiros, determinar o
+	  comprimento de um segmento crescente de comprimento máximo.
+	  
+		Exemplos:
+			° Na sequência 5,10,3,2,4,7,9,8,5 o comprimento do segmento crescente máximo é 4
+								 (2,4,7,9)
+			
+			° Na sequência 10,8,7,5,2 o comprimento de um segmente crescente máximo é 1
+			
+	  Desenvolva um programa em C para calcular o comprimento do segmento crescente máximo.
+	  
+	  
+*== 2. Exercícios com Repetições Encaixadas =================================================================*
+
+2.6  Escreva um programa em C que, dado um número inteiro positivo, determine a sua decomposição em
+	 fatores primos.
+	 
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+*== 3. Exercícios com Reais =================================================================================*
+	 
+3.1  Uma pessoa aplicou um capital de x reais a juros mensais de y durante z meses. Desenvolva um 
+	 programa em C que determine o montante de cada mês e o total no final dos z meses.
+	 
+-------------------------------------------------------------------------------------------------------------
+
+3.2  Dadas as populações de duas cidades A e B e sabendo que a população de A tem um crescimento
+	 anual de x e a população de B tem um crescimento anual de y, crie um programa que determine:
+		
+		° Se a população da cidade menor ultrapassa a da maior e caso ultrapasse:
+		° quantos anos serão necessários para a menor ultrapassar.
+		
+		
+		
+*== 4. Exercícios de Funções - Parte I ====================================================================*
+
+4.2  a) Escreva uma função "encaixa" que, recebendo dois números inteiros a e b como parâmetros, verifica
+	 se b corresponde aos últimos dígitos de a.
+	 
+			Exemplo:
+				a		b
+			567890    890 => encaixa
+			  1243   1243 => encaixa
+			  2457    245 => não encaixa
+		       457   2457 => não encaixa
+	 
+	 b) Usando a função do item anterior, faça um programa que lê dois  números a e b e verifica se
+     	o menor deles é segmento do outro.
+			
+			Exemplo:
+					a	     b
+				567890      678 => b é segmento de a
+				  1243  2212435 => a é segmento de b
+				   235      236 => um não é segmento do outro
+				   
+				   
+-------------------------------------------------------------------------------------------------------
+
+4.3  (MAT 94) Uma sequência de n números inteiros não nulos pe dita piramidal malternante se é
+	 constituída por m segmentos: o primeiro com um elemento, o segundo com dois elementos e 
+	 assim por diante até o m-ésimo termo, com m elementos. Além disso, os elementos de um mesmo
+	 segmento devem ser todos pares ou todos ímpares e para cada segmento, se seus elementos forem
+	 todos pares (ímpares), os elementos do segmento seguinte devem ser todos ímpares (pares).
+	 
+			Por exemplo, a sequência com n = 10 elementos:
+				12 | 3 7 | 2 10 4 | 5 13 5 11 | é piramidal com 4-alternante
+				
+			a sequência com n = 3 elementos:
+				7 | 10 2 | é piramidal 2-alternante
+				
+			a sequência com n = 8 elementos:
+				1 | 12 4 | 3 13 5 | 12 6 | não é piramidal alternante, pois o último segmento não
+										   tem tamanho 4.
+										
+	  a) Escreva uma função "bloco" que recebe como parâmetro um inteiro n e lê n inteiros do teclado
+		 devolvendo um dos seguintes valores:
+			0, se os n números lidos forem pares;
+			1, se os n números lidos forem ímpares;
+		   -1, se entre os n números lidos há números com paridade diferentes.
+			
+	  b) Usando a função do item anterior, escreva um programa que, dados um inteiro m (n >= 1) e uma 
+		 sequência de n números inteiros, verifica se ela é piramidal m-alternante. O programa deve
+		 imprimir o valor de m ou dar a resposta "não é piramidal alternante".
+
+-------------------------------------------------------------------------------------------------------
+
+*== 5. Exercícios com Funções - Parte II =================================================================*
+
+5.1  a) Escreva uma função que recebe um número inteiro positivo n e devolve o número de dígitos de n e
+		o primeiro dígito de n.
+	 
+	 b) Escreva um programa que leia uma sequência de n inteiros positivos e imprime o número de dígitos
+		e o primeiro dígito de cada um deles.
+		
+----------------------------------------------------------------------------------------------------------
+		
+5.6  (POLI 94) Considere as seguintes fórmulas de recorrência:
+		
+		F1 = 2;                                G1 = 1;
+		F2 = 1;                                G2 = 2;
+		Fi = 2*F(i-1) + G(i-2) para i >= 3.     Gi = G(i-1) + 3*F(i-2) para i >= 3.
+	 
+	  Podemos então montar a seguinte tabela:
+			-------------------------------
+			|i  | 1 | 2 | 3 | 4 | 5 | ... |
+			|---|---|---|---|---|---|-----|
+		    |Fi | 2 | 1 | 3 | 8 | 24| ... |
+			|Gi | 1 | 2 | 8 | 11| 20| ... |
+			-------------------------------
+			
+	  a) Só para ver se você entendeu as fórmulas, qual é o valor de F6 e G6?
+	
+	  b) Faça uma função valor que recebe um inteiro k >= 1 e devolve Fk e Gk.
+			
+			Exemplo: Para k = 2, a função deve devolver os valores 1 e 2. 
+					 Para k = 3, a função deve devolver os valores 3 e 8.
+					 Para k = 4, a função deve devolver os valores 8 e 11.
+					 
+	  c) Faça um programa que lê um inteiro n > 2 e imprime os valores Fn-2 + Gn+200
+	     e Fn+200 - Gn-2. Seu programa deve obrigatoriamente utilizar a função do item 
+		 anterior.
+	 
+	 
+	 
+	 
+	 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
