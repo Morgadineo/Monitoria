@@ -1,0 +1,44 @@
+*============================*
+| Monitoria 05/09/2024 (qui) |
+*============================*
+
+*=== Conceitos introdutórios de programação ====*
+|  > Paradigmas					|
+|    + Imperativo				|
+|      - Procedural;				|
+|      - Orientado a Objetos.			|		
+|    + Declarativo				|
+|      - Lógico;				|
+|      - Funcional.				|
+|   + (outros diversos ...)			|
+*===============================================*
+
+*=== Nível das linguagens ===========*
+| > Linguagens de Alto/Baixo nível   |
+|     C, C++, Java, Python.	     |
+|  > Tipagem das linguagens	     |
+|      Tipagem forte e fraca	     |	
+*====================================*
+
+*=== Processos de análise e execução do código ===*
+| > Linguagens Compiladas                         |
+|     - C/C++;					  |
+|     - C#;					  |
+|     - ...					  |
+| > Linguagens Interpretadas			  |
+|    - Python					  |
+|    - Javascript				  |
+|    - ...					  |
+| > Linguagens Híbridas				  |
+|      - Java					  |
+|      - ...					  |
+*=================================================*
+
+- Não deu tempo de ser discutido a fundo:
+    > Critérios para avaliação de Linguagens.
+
+
+
+
+
+
